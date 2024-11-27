@@ -1,3 +1,4 @@
+/* ... */
 function setTheme(mode) {
     localStorage.setItem("theme-storage", mode);
     if (mode === "dark") {

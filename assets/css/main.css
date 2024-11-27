@@ -1,10 +1,10 @@
 /* Markdown */
 :root{
---maincolor: red;
---bordercl:rebeccapurple;
+--maincolor: #0077b6;
+--bordercl: #999;
 --callouctcolor:dodgerblue;
---hovercolor:navy;
---darkMaincolor: #50fa7b;
+--hovercolor: #0077b6;
+--darkMaincolor: #87ceeb;
 }
 html {
   color: #232333;
@@ -44,7 +44,7 @@ blockquote {
 }
 
 a {
-  border-bottom: 3px solid var(--maincolor);
+  border-bottom: 2px solid var(--maincolor);
   color: inherit;
   text-decoration: none;
 }
@@ -144,9 +144,23 @@ header {
 header .main {
   font-size: 1.5rem;
 }
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
   font-size: 1.2rem;
+}
+h1, h2, h3 {
   margin-top: 2em;
+  line-height: 1.5;
+}
+h4, h5, h6 {
+  font-size: 1rem;
+  margin-top: 1.5em;
+  line-height: 1.2;
 }
 
 h1::before { color: var(--maincolor); content: '# '; }
